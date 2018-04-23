@@ -8,9 +8,9 @@ class Spider(object):
     """蜘蛛，爬虫类"""
 
     @staticmethod
-    def request_url(url):
+    def request_url(url, headers):
         if url:
-            response = requests.get(url)
+            response = requests.get(url, headers)
             if response.status_code == "404":
                 url = input("地址请求失败，重新输入：")
                 Spider.request_url(url)

@@ -9,6 +9,10 @@ name = "pypi"
 
 requests = "*"
 numpy = "*"
+"beautifulsoup4" = "*"
+"html5lib" = "*"
+sqlalchemy = "==1.2"
+mysql-connector-python = "*"
 
 
 [dev-packages]
